@@ -3,10 +3,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
-st.title('Penguin Classifier: A Machine Learning App')
-st.write("This app uses 6 inputs to predict the species of penguin using "
-         "a model built on the Palmer Penguins dataset. Use the form below"
-         " to get started!")
+st.title('Pingvin kategorizáló: Egy gépi tanuló app')
+st.write("Ez az alkalmazás 6 bemeneti adatot használ a pingvinfaj előrejelzéséhez a "
+         "a Palmer Pingvinek adathalmazán alapuló modell alapján. Használja az űrlapot"
+         " hogy elkezdhesse!")
 penguin_df = pd.read_csv('penguins.csv')
 rf_pickle = open('random_forest_penguin.pickle', 'rb')
 map_pickle = open('output_penguin.pickle', 'rb')
@@ -17,18 +17,18 @@ map_pickle.close()
 ##############
 with st.sidebar.form("user_inputs"):
     island = st.selectbox(
-        "Penguin Island",
+        "Pingvin lelőhelye (sziget)",
         options=["Biscoe", "Dream", "Torgerson"])
     sex = st.selectbox(
-        "Sex", options=["Female", "Male"])
+        "Neme", options=["Female", "Male"])
     bill_length = st.number_input(
-        "Bill Length (mm)", min_value=0)
+        "Csőr hossz (mm)", min_value=0)
     bill_depth = st.number_input(
-        "Bill Depth (mm)", min_value=0)
+        "Csőr átmérő (mm)", min_value=0)
     flipper_length = st.number_input(
-        "Flipper Length (mm)", min_value=0)
+        "Uszony hossz (mm)", min_value=0)
     body_mass = st.number_input(
-        "Body Mass (g)", min_value=0)
+        "Testtömeg (g)", min_value=0)
     st.form_submit_button()
 island_biscoe, island_dream, island_torgerson = 0, 0, 0
 if island == 'Biscoe':
@@ -58,11 +58,11 @@ new_prediction = rfc.predict(
     ]
 )
 prediction_species = unique_penguin_mapping[new_prediction][0]
-st.write(f"We predict your penguin is of the {prediction_species} species")
+# st.write(f"Azt gondoljuk, hogy ez egy {prediction_species} fajta adata.")
 
 # todo additional part of article
-st.subheader("Predicting Your Penguin's Species:")
-st.write(f"We predict your penguin is of the {prediction_species} species")
+st.subheader("Pingvin fajta megjósolása:")
+st.write(f"Azt gondoljuk, hogy ennek {prediction_species} fajtának kell lennie")
 st.write(
     """We used a machine learning 
     (Random Forest) model to predict the 
