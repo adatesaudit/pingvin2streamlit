@@ -17,18 +17,18 @@ map_pickle.close()
 ##############
 with st.sidebar.form("user_inputs"):
     island = st.selectbox(
-        "Pingvin lelőhelye (sziget)",
+        "Pingvin lelőhelye (sziget) - island",
         options=["Biscoe", "Dream", "Torgerson"])
     sex = st.selectbox(
-        "Neme", options=["Female", "Male"])
+        "Neme - sex", options=["Female", "Male"])
     bill_length = st.number_input(
-        "Csőr hossz (mm)", min_value=0)
+        "Csőr hossz (mm) - bill lenght", min_value=0)
     bill_depth = st.number_input(
-        "Csőr átmérő (mm)", min_value=0)
+        "Csőr átmérő (mm) - bill depth", min_value=0)
     flipper_length = st.number_input(
-        "Uszony hossz (mm)", min_value=0)
+        "Uszony hossz (mm) - flipper lenght", min_value=0)
     body_mass = st.number_input(
-        "Testtömeg (g)", min_value=0)
+        "Testtömeg (g) - body mass", min_value=0)
     st.form_submit_button("Okézd le")
 island_biscoe, island_dream, island_torgerson = 0, 0, 0
 if island == 'Biscoe':
