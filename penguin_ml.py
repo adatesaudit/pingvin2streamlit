@@ -64,11 +64,10 @@ prediction_species = unique_penguin_mapping[new_prediction][0]
 st.subheader("Pingvin fajta megjósolása:")
 st.write(f"Azt gondoljuk, hogy ennek {prediction_species} fajtának kell lennie")
 st.write(
-    """We used a machine learning 
-    (Random Forest) model to predict the 
-    species, the features used in this 
-    prediction are ranked by relative 
-    importance below."""
+    """Gépi tanuló modell használtunk 
+    (Random Forest) hogy előre tudjuk jelezni 
+    a fajtákat, az alábbi képen a beállítható jellemzők
+    relatív fontossági sorrendben vannak bemutatva."""
 )
 st.image("feature_importance.png")
 
