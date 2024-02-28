@@ -29,7 +29,7 @@ with st.sidebar.form("user_inputs"):
         "Uszony hossz (mm)", min_value=0)
     body_mass = st.number_input(
         "Testtömeg (g)", min_value=0)
-    st.form_submit_button()
+    st.form_submit_button("Okézd le")
 island_biscoe, island_dream, island_torgerson = 0, 0, 0
 if island == 'Biscoe':
     island_biscoe = 1
