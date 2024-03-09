@@ -73,9 +73,8 @@ st.image("feature_importance.png")
 
 # todo another new part of script
 st.write(
-    """Below are the histograms for each
-continuous variable separated by penguin species.
-The vertical line represents the inputted value."""
+    """Az alábbiakban az egyes folytonos változók hisztogramjai láthatóak pingvinfajok szerint elkülönítve. 
+    A függőleges vonal a beírt értéket jelöli."""
 )
 
 fig, ax = plt.subplots()
