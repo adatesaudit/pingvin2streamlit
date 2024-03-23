@@ -3,6 +3,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
+
+# emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
+st.set_page_config(page_title="Penguin finder", page_icon=":penguin:") # , layout="wide")
+
 st.title('Pingvin kategorizáló: Egy gépi tanuló app')
 st.write("Ez az alkalmazás 6 bemeneti adatot használ a pingvinfaj előrejelzéséhez a "
          "a Palmer Pingvinek adathalmazán alapuló modell alapján. Használja az űrlapot"
@@ -100,3 +104,29 @@ ax = sns.displot(
 plt.axvline(flipper_length)
 plt.title("Uszony hosszúság fajtánként - Flipper Length by Species")
 st.pyplot(ax)
+
+# ---- HIDE STREAMLIT STYLE ----
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
