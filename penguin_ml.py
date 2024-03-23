@@ -81,6 +81,8 @@ st.write(
     A függőleges vonal a beírt értéket jelöli."""
 )
 
+# col1, col2, col3 = st.columns(3)
+
 fig, ax = plt.subplots()
 ax = sns.displot(
     x=penguin_df["bill_length_mm"],
@@ -88,6 +90,8 @@ ax = sns.displot(
 plt.axvline(bill_length)
 plt.title("Csőr hosszúság fajtánként - Bill Length by Species")
 st.pyplot(ax)
+# with col1:
+#     st.pyplot(ax)
 
 fig, ax = plt.subplots()
 ax = sns.displot(
@@ -96,6 +100,8 @@ ax = sns.displot(
 plt.axvline(bill_depth)
 plt.title("Csőr átmérő fajtánként - Bill Depth by Species")
 st.pyplot(ax)
+# with col2:
+#     st.pyplot(ax)
 
 fig, ax = plt.subplots()
 ax = sns.displot(
@@ -104,6 +110,10 @@ ax = sns.displot(
 plt.axvline(flipper_length)
 plt.title("Uszony hosszúság fajtánként - Flipper Length by Species")
 st.pyplot(ax)
+# with col3:
+#     st.pyplot(ax)
+
+
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
