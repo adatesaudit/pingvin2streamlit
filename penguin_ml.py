@@ -13,6 +13,7 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
+            [data-testid="stToolbar"] {visibility: hidden;}
             
             
             footer:after {
