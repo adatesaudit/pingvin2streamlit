@@ -1,0 +1,37 @@
+[theme] # You have to add this line
+base="dark"
+
+## version_1 kék-világoskék
+#primaryColor = '#FF8C02' # Bright Orange
+#backgroundColor = '#00325B' # Dark Blue
+#secondaryBackgroundColor = '#55B2FF' # Lighter Blue
+#textColor = "#DCDCDC"
+#font = "sans-serif"
+
+## version_2 kék-világoskék jobb verzió sötétebb
+#primaryColor = "#E694FF"
+#backgroundColor = "#00172B"
+#secondaryBackgroundColor = "#0083B8"
+#textColor = "#DCDCDC"
+#font = "sans-serif"
+#
+## version_3 barna_nyugtató
+#primaryColor = '#919e8b' # green
+#backgroundColor = 'rgba(254,248,239,1)' # sepia yellow
+#secondaryBackgroundColor = '#ebd2b9' # wheat
+#textColor = "#6e7074" # grey
+#font = "sans-serif"
+
+# version_4 szürke_sötétszürke
+primaryColor="#bd93f9"
+backgroundColor="#282a36"
+secondaryBackgroundColor="#44475a"
+textColor="#f8f8f2"
+font = "sans-serif"
+
+### version_5
+#primaryColor="#072AC8"
+#backgroundColor="#7494EA"
+#secondaryBackgroundColor="#EDCF8E"
+#textColor="#262322"
+#font="serif"
