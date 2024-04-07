@@ -13,19 +13,7 @@ hide_st_style = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            [data-testid="stToolbar"] {visibility: hidden;}
-            
-            
-            footer:after {
-            content:'goodbye'; 
-            visibility: visible;
-            display: block;	
-            position: relative;
-            #background-color: red;
-            padding: 5px;
-            top: 2px; }
-            </style>
-
+            [data-testid="stToolbar"] {visibility: hidden;}         
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
